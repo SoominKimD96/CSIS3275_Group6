@@ -28,8 +28,8 @@ public class BattleShipModel {
 	/**
 	 * It takes the guess and compares with the location in the ship object.<br>
 	 * Check if the guess is wrong. If correct, check if it is already sunk, or the user sank of the battleships. 
-	 * @param guess
-	 * @return
+	 * @param guess user's guess
+	 * @return message
 	 */
 	public String fire(String guess) {
 		String text = "";
@@ -62,7 +62,7 @@ public class BattleShipModel {
 
 	/**
 	 * A method to check all the battleship is sunk
-	 * @param ship
+	 * @param ship ship object
 	 * @return boolean
 	 */
 	public boolean isSunk(Ship ship) {

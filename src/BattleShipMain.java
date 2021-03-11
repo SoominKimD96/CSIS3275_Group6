@@ -11,6 +11,7 @@ public class BattleShipMain {
 
 	/**
 	 * Execute the Application.
+	 * @param args default parameter
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {

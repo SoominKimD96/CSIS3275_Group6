@@ -13,8 +13,8 @@ public class Ship {
 
     /**
      * Contractor
-     * @param location
-     * @param hit
+     * @param location location
+     * @param hit hit
      */
     public Ship(ArrayList<String> location, ArrayList<String> hit) {
         this.location = location;
@@ -36,7 +36,7 @@ public class Ship {
 
     /**
      * Set the information of the location
-     * @param location
+     * @param location location
      */
     public void setLocation(ArrayList<String> location) {
         this.location = location;
@@ -44,8 +44,8 @@ public class Ship {
 
     /**
      * Set the information of the hit
-     * @param hit
-     * @param index
+     * @param hit hit
+     * @param index index
      */
     public void setHit(String hit, int index) {
         this.hit.set(index, hit);
@@ -53,7 +53,7 @@ public class Ship {
 
     /**
      * Get the information of the location
-     * @return
+     * @return the information of the location
      */
     public ArrayList<String> getLocation() {
         return location;
@@ -61,7 +61,7 @@ public class Ship {
     
     /**
      * Get the information of the hit
-     * @return
+     * @return hit
      */
     public ArrayList<String> getHit() {
         return hit;

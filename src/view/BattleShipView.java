@@ -41,6 +41,7 @@ public class BattleShipView{
 
 	/**
 	 * Constructor
+	 * @param controller BattleShipController
 	 */
 	public BattleShipView(BattleShipController controller) {
 		this.controller = controller;
@@ -129,7 +130,7 @@ public class BattleShipView{
 
 	/**
 	 * Display the message when a certain message is received
-	 * @param message
+	 * @param message message
 	 */
 	public void displayMessage(String message) {
 		
@@ -143,8 +144,8 @@ public class BattleShipView{
 
 	/**
 	 * Set a corresponding image to the button according to the message received
-	 * @param e
-	 * @param message
+	 * @param e Action Event
+	 * @param message message
 	 */
 	public void setImage(ActionEvent e, String message) {
 		JButton buttonClicked = (JButton) e.getSource();
@@ -161,7 +162,7 @@ public class BattleShipView{
 
 	/**
 	 * Display how many attempts the user made
-	 * @param guesses
+	 * @param guesses user's guesses
 	 */
 	public void displayAttempts(int guesses) {
 		//this.north.setText("You only have 35 chances!!\n Current attempts: " + guesses + "/35");

@@ -53,7 +53,7 @@ public class BattleShipController implements ActionListener, MouseListener {
     /**
      * Process and compare the user guess and ship location. <br> 
      * It gets a message from a model and plays corresponding sounds, and it returns the message.
-     * @param guess
+     * @param guess user's guess
      * @return hitMessage
      */
     public String processGuess(String guess) {
@@ -127,8 +127,8 @@ public class BattleShipController implements ActionListener, MouseListener {
 
     /**
      * Play a sound according to the results of the guess
-     * @param soundName
-     * @param soundType
+     * @param soundName the name of a sound
+     * @param soundType the type of a sound
      */
     public synchronized void playSound(String soundName, int soundType) {
     
